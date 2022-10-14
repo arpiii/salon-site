@@ -30,6 +30,11 @@ body {
 /* LAYOUT
 /*******************************************/
 
+header section {
+  display: none;
+}
+
+
 header nav ul {
   display: flex;
   flex-flow: row;
@@ -251,3 +256,132 @@ main {
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+
+@media screen and (max-width: 768px) {
+  header nav {
+    display: none;
+  }
+
+  header section {
+    display: flex;
+  }
+
+  header section div {
+    flex: 1;
+    margin-top: 1em;
+  }
+
+  header i {
+    height: 1em;
+  }
+
+  header section h1 {
+    flex: 2;
+    font-family: 'Playfair Display';
+    margin: 0;
+    margin-top: 1%;
+  }
+
+
+  /* Main section */
+  main {
+    height: 800px;
+    background-repeat: no-repeat;
+    background-position: 65% 25%;
+    border-bottom: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  main section {
+    margin-left: 8%;
+  }
+
+  #intro h1 {
+    font-size: 1.5em;
+  }
+
+  #intro p {
+    font-size: 0.5em;
+  }
+
+  #intro2 {
+    width: 60%;
+  }
+
+  #intro2 p {
+    margin-bottom: 10%;
+    font-size: .8em;
+  }
+
+  #intro2 span {
+    padding: 5%;
+  }
+
+  /* About section */
+
+  #about {
+    justify-content: space-between;
+  }
+
+  #about section h3 {
+    font-size: 1em;
+  }
+
+  #about p {
+    font-size: 0.73em;
+  }
+
+  .aboutIcons {
+    height: 50px;
+  }
+
+  /* Momentum (mid section) */
+  #momentum {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+  }
+
+  #momentum section {
+    margin-left: 5%;
+  }
+
+  #momentum h2 {
+    font-size: 2em;
+    width: 100%;
+  }
+
+  #momentum img {
+    margin-top: 5%;
+    height: 50%;
+    width: 100%;
+  }
+  
+
+  /* Stylists */
+  #stylists {
+    flex-direction: column;
+  }
+
+  #stylists > section {
+    flex-direction: column;
+  }
+
+  #stylists img {
+    height: 300px;
+  }
+
+  #stylists section span {
+    font-size: 0.75em;
+  }
+
+  /* Lookbook section */
+
+  #lookbook {
+    font-size: 2em;
+  }
+
+  #lookbook img {
+    width: 50%;
+  }
+}
