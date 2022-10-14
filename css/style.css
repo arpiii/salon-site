@@ -380,6 +380,10 @@ main {
     font-size: 0.75em;
   }
 
+  #stylists section:nth-child(-n + 2) span {
+    margin-bottom: 5%;
+  }
+
   /* Lookbook section */
 
   #lookbook {
