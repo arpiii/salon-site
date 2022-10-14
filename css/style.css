@@ -321,11 +321,15 @@ main {
 
   #about {
     justify-content: space-between;
+    margin: 0;
+  }
+
+  #about section {
+    width: auto;
   }
 
   #about section h3 {
     font-size: 1em;
-    width: 50%;
   }
 
   #about p {
